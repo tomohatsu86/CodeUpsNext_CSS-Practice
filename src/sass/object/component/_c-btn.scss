@@ -1,24 +1,36 @@
 @use "global" as *;
 
-.c-btn {
+.c-btn{
   font-family: $base-font-family;
   font-size: rem(24);
   font-weight: $bold;
   letter-spacing: 0;
   line-height: 1;
-  color: $white;
   text-transform: uppercase;
-  background-color: #4D4D4D;
-  border: rem(2) solid #4D4D4D;
   border-radius: rem(20);
   display: block;
-  // width: 100%;
-  // max-width: rem(287);
   padding: rem(14) rem(78);
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
-.c-btn:hover {
+.c-btn--reverse{
+  background-color: $gray;
+  border: rem(2) solid $gray;
+  color: $white;
+}
+.c-btn--reverse:hover {
   background: $white;
-  color: #4D4D4D;
+  color: $gray;
+}
+
+
+.c-btn--float{
+  background-color: $white;
+  border: rem(2) solid $gray;
+  color: $gray;
+}
+.c-btn--float:hover{
+  background-color: $gray;
+  color: $white;
+  transform: translateY(-5px);
 }
