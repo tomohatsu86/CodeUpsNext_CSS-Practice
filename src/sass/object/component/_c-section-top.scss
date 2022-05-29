@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.c-section-top{
+  width: 100%;
+}
+
+.c-section-top__text{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0;
+  color: $black;
+}

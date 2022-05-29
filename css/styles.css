@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "";
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .u-desktop {
@@ -29,10 +29,10 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 1.4545454545vw;
+    font-size: 1.6vw;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   html {
     font-size: 16px;
   }
@@ -174,10 +174,41 @@ select::-ms-expand {
 }
 
 .c-btn {
-  padding: 10px 40px;
-  padding: 0.625rem 2.5rem;
-  background-color: black;
-  color: yellow;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  background-color: #4D4D4D;
+  border: 2px solid #4D4D4D;
+  border: 0.125rem solid #4D4D4D;
+  border-radius: 1.25rem;
+  display: block;
+  padding: 14px 78px;
+  padding: 0.875rem 4.875rem;
+  -webkit-transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.c-btn:hover {
+  background: #f7f7f7;
+  color: #4D4D4D;
+}
+
+.c-section-top {
+  width: 100%;
+}
+
+.c-section-top__text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000;
 }
 
 .c-test {
@@ -198,21 +229,136 @@ select::-ms-expand {
   max-width: 33.75rem;
   width: 100%;
   height: inherit;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media screen and (min-width: 768px) {
   .l-inner {
-    max-width: 1150px;
+    max-width: 1050px;
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.p-normal-card {
+  width: 100%;
+  max-width: 296px;
+  max-width: 18.5rem;
+  display: block;
+  background-color: #D2D2D2;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, .25);
+          box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, .25);
+  position: relative;
+  z-index: 1;
+}
+
+.p-normal-card::after {
+  background-color: #3D593D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: 0.1s cubic-bezier(0.45, 0, 0.55, 1);
+  transition: 0.1s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+.p-normal-card:hover {
+  color: #f7f7f7;
+}
+
+.p-normal-card:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.p-normal-card__img {
+  position: relative;
+  padding-top: 74.3243243243%;
+}
+
+.p-normal-card__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-normal-card__body {
+  width: 100%;
+  padding: 20px;
+  padding: 1.25rem;
+}
+
+.p-normal-card__title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.p-normal-card__excerpt {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.p-section-head {
+  width: 100%;
+  text-align: center;
+}
+
+.p-section-head--left {
+  text-align: left;
+}
+
+.p-section-head__title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.p-section-head__sub-title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000;
+  border-bottom: 2px solid #005700;
+  border-bottom: 0.125rem solid #005700;
 }
 
 .p-test {
   color: red;
   font-size: 20px;
   font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-test {

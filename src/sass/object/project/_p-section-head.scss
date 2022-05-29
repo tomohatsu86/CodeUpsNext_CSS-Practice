@@ -1,0 +1,31 @@
+
+@use "global" as *;
+
+.p-section-head{
+  width: 100%;
+  text-align: center;
+}
+
+.p-section-head--left{
+  text-align: left;
+}
+
+.p-section-head__title{
+  font-family: $base-font-family;
+  font-size: rem(32);
+  font-weight: $bold;
+  letter-spacing: 0;
+  color: $black;
+  text-transform: uppercase;
+
+}
+
+.p-section-head__sub-title{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0;
+  color: $black;
+  border-bottom: rem(2) solid #005700;
+}
+

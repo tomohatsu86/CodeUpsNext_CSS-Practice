@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.p-normal-card{
+  width: 100%;
+  max-width: rem(296);
+  display: block;
+  background-color: #D2D2D2;
+  color: $black;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: rem(10);
+  box-shadow: rem(5) rem(5) rem(5) rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+.p-normal-card::after{
+  background-color: #3D593D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: rem(10);
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .1s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+.p-normal-card:hover {
+  color: $white;
+}
+
+.p-normal-card:hover::after {
+  transform: scale(1, 1);
+}
+
+.p-normal-card__img{
+  position: relative;
+  padding-top: calc((220 / 296) * 100%)
+}
+
+.p-normal-card__img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+}
+
+.p-normal-card__body{
+  width: 100%;
+  padding: rem(20);
+}
+
+.p-normal-card__title{
+  font-family: $base-font-family;
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: 0;
+}
+
+.p-normal-card__excerpt{
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0;
+}
