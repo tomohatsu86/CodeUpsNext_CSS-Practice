@@ -8,6 +8,7 @@
   line-height: 1;
   text-transform: uppercase;
   border-radius: rem(20);
+  border: rem(2) solid $gray;
   display: block;
   padding: rem(14) rem(78);
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
@@ -15,7 +16,6 @@
 
 .c-btn--reverse{
   background-color: $gray;
-  border: rem(2) solid $gray;
   color: $white;
 }
 .c-btn--reverse:hover {
@@ -26,7 +26,6 @@
 
 .c-btn--float{
   background-color: $white;
-  border: rem(2) solid $gray;
   color: $gray;
 }
 .c-btn--float:hover{
