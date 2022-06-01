@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-top-staff{
+  background-color: rgba(175, 158, 151, 0.6);
+  background: linear-gradient(180deg, rgba(175, 158, 151, 0.6) 0%, rgba(175, 158, 151, 0.6) 69.333%, $white 69.333%, $white 100%);
+
+}
+
+.p-top-staff__top{
+  margin-top: rem(40);
+}
+
+.p-top-staff__items{
+  margin-top: rem(40);
+}
+
+.p-top-staff__item{
+  margin: 0 auto;
+}
+
+.p-top-staff__item + .p-top-staff__item{
+  margin-top: rem(40);
+}
+
+.p-top-staff__btn{
+  width: 100%;
+  margin-top: rem(40);
+  text-align: center;
+}

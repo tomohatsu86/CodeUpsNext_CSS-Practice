@@ -24,6 +24,8 @@
   left: 50%;
   transform: translate(-50%,-50%);
   object-fit: cover;
+  border-top-right-radius: rem(10);
+  border-top-left-radius: rem(10);
 }
 
 .p-normal-card__body{
@@ -76,6 +78,7 @@
   transform: scale(1, 1);
 }
 
+
 .p-normal-card--circle{
   background-color: $white;
   color: $black;
@@ -98,7 +101,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 120%;
   height: 0;
   z-index: -1;
   transform: translateY(-50%) scale(0.1);
