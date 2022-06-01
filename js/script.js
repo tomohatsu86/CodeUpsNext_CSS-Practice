@@ -47,4 +47,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  //swiper
+
+    let mvSwipeOption = {
+      loop: true,
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 2000,
+
+    }
+    new Swiper('.swiper', mvSwipeOption);
+
+
 });

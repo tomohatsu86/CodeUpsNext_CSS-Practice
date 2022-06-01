@@ -23,8 +23,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./js/script.js"></script>
   </head>
   <body>
@@ -40,7 +43,7 @@
               ブログにて当店の魅力やスタッフの日常などを発信しております。是非、ご覧ください！
             </p>
           </div>
-          <div class="p-top-blog__items">
+          <div class="p-top-blog__items p-cards-col3">
             <div class="p-top-blog__item p-normal-card p-normal-card--slide">
               <figure class="p-normal-card__img">
                 <img src="./images/blog/blog01.jpg" alt="写真：店の外観">
@@ -75,7 +78,6 @@
         </div>
       </section>
 
-      
       <section class="p-top-staff l-top-staff">
         <div class="p-top-staff__inner l-inner">
           <div class="p-top-staff__head p-section-head">
@@ -89,7 +91,7 @@
               意外な一面が見れるかもしれません！
             </p>
           </div>
-          <div class="p-top-staff__items">
+          <div class="p-top-staff__items p-cards-col3">
             <div class="p-top-staff__item p-normal-card p-normal-card--circle">
               <figure class="p-normal-card__img">
                 <img src="./images/staff/staff01.jpg" alt="写真：観覧するスタッフ">
@@ -166,75 +168,100 @@
           </div>
           <div class="p-top-news__top c-section-top">
             <p class="c-section-top__text">
-              こちらでは、当店の最新情報を発信していきます。<br>
-              入荷情報やSALEの情報などお得な情報ばかりですので、是非チェックしてみてください！
+              こちらでは、当店の最新情報を発信していきます。<br>入荷情報やSALEの情報などお得な情報ばかりですので、是非チェックしてみてください！
             </p>
           </div>
-
+          <div class="p-top-news__items p-cards-col3">
+            <div class="p-top-news__item p-wide-card p-wide-card--reverse">
+              <figure class="p-wide-card__img">
+                <img src="./images/news/news01.jpg" alt="写真：ソファと観葉植物">
+              </figure>
+              <div class="p-wide-card__body">
+                <div class="p-wide-card__space"></div>
+                <div class="p-wide-card__box">
+                  <h2 class="p-wide-card__title">お部屋をコーディネート</h2>
+                  <p class="p-wide-card__excerpt">空間デザイナーをお呼びして、お部屋をおしゃれにコーディネート！プロからのアドバイスをも...</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-top-news__item p-wide-card p-wide-card--reverse">
+              <figure class="p-wide-card__img">
+                <img src="./images/news/news02.jpg" alt="写真：ソファと観葉植物">
+              </figure>
+              <div class="p-wide-card__body">
+                <div class="p-wide-card__space"></div>
+                <div class="p-wide-card__box">
+                  <h2 class="p-wide-card__title">新作入荷！</h2>
+                  <p class="p-wide-card__excerpt">お待たせいたしました！<br>
+                    イタリアよりヴィンテージソファーが入稿いたしました！1...</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-top-news__item p-wide-card p-wide-card--reverse">
+              <figure class="p-wide-card__img">
+                <img src="./images/news/news02.jpg" alt="写真：ソファと観葉植物">
+              </figure>
+              <div class="p-wide-card__body">
+                <div class="p-wide-card__space"></div>
+                <div class="p-wide-card__box">
+                  <h2 class="p-wide-card__title">新作入荷！</h2>
+                  <p class="p-wide-card__excerpt">お待たせいたしました！<br>
+                    パリより新作のソファーが入荷いたしました！...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-top-news__btn">
+            <button class="c-btn c-btn--reverse">news</button>
+          </div>
         </div>
       </section>
 
+      <section class="p-top-works l-top-works">
+        <div class="p-top-works__inner l-inner">
+          <div class="p-top-works__head p-section-head p-section-head--right">
+            <h1 class="p-section-head__title">works</h1>
+            <span class="p-section-head__sub-title">実績</span>
+          </div>
+          <div class="p-top-works__top c-section-top">
+            <p class="c-section-top__text">
+              これまでに当社にてインテリアコーディネートを担当させていただきました実績をご紹介させていただきます。<br>店舗からご自宅まで様々なコーディネートを行っております。
+            </p>
+          </div>
+          <div class="p-top-works__items swiper">
+            <div class="swiper-wrapper">
 
-      <div class="p-section-head">
-        <h1 class="p-section-head__title">blog</h1>
-        <span class="p-section-head__sub-title">ブログ</span>
-      </div>
-      <div class="c-section-top">
-        <p class="c-section-top__text">
-          ブログにて当店の魅力やスタッフの日常などを発信しております。是非、ご覧ください！
-        </p>
-      </div>
+              <div class="swiper-slide p-wide-card p-wide-card--slide">
+                <figure class="p-wide-card__img">
+                  <img src="./images/news/news01.jpg" alt="写真：ソファと観葉植物">
+                </figure>
+                <div class="p-wide-card__body">
+                  <div class="p-wide-card__space"></div>
+                  <div class="p-wide-card__box">
+                    <h2 class="p-wide-card__title">Restaurant O様</h2>
+                  </div>
+                </div>
+              </div>
 
+              <div class="swiper-slide p-wide-card p-wide-card--slide">
+                <figure class="p-wide-card__img">
+                  <img src="./images/news/news01.jpg" alt="写真：ソファと観葉植物">
+                </figure>
+                <div class="p-wide-card__body">
+                  <div class="p-wide-card__space"></div>
+                  <div class="p-wide-card__box">
+                    <h2 class="p-wide-card__title">Restaurant O様</h2>
+                  </div>
+                </div>
+              </div>
 
-      <div class="p-normal-card p-normal-card--slide">
-        <figure class="p-normal-card__img">
-          <img src="./images/blog/blog01.jpg" alt="写真：店の外観">
-        </figure>
-        <div class="p-normal-card__body">
-          <h2 class="p-normal-card__title">移転しました！</h2>
-          <p class="p-normal-card__excerpt">東京都内に移転いたしますた。<br>恵比寿駅から徒歩3分...</p>
-        </div>
-      </div>
-
-      <div class="p-normal-card p-normal-card--circle">
-        <figure class="p-normal-card__img">
-          <img src="./images/blog/blog01.jpg" alt="写真：店の外観">
-        </figure>
-        <div class="p-normal-card__body">
-          <h2 class="p-normal-card__title">移転しました！</h2>
-          <p class="p-normal-card__excerpt">東京都内に移転いたしますた。<br>恵比寿駅から徒歩3分...</p>
-        </div>
-      </div>
-      
-      <div class="p-wide-card p-wide-card--reverse">
-        <figure class="p-wide-card__img">
-          <img src="./images/news/news01.jpg" alt="写真：ソファと観葉植物">
-        </figure>
-        <div class="p-wide-card__body">
-          <div class="p-wide-card__space"></div>
-          <div class="p-wide-card__box">
-            <h2 class="p-wide-card__title">お部屋をコーディネート</h2>
-            <p class="p-wide-card__excerpt">空間デザイナーをお呼びして、お部屋をおしゃれにコーディネート！プロからのアドバイスをも...</p>
+            </div>
+          </div>
+          <div class="p-top-works__btn">
+            <button class="c-btn c-btn--float">works</button>
           </div>
         </div>
-      </div>
-
-      <div class="p-wide-card p-wide-card--slide">
-        <figure class="p-wide-card__img">
-          <img src="./images/news/news01.jpg" alt="写真：ソファと観葉植物">
-        </figure>
-        <div class="p-wide-card__body">
-          <div class="p-wide-card__space"></div>
-          <div class="p-wide-card__box">
-            <h2 class="p-wide-card__title">Restaurant O様</h2>
-          </div>
-        </div>
-      </div>
-
-
-      <button class="c-btn c-btn--float">staff blog</button>
-      <button class="c-btn c-btn--reverse">news</button>
-      <button class="c-btn c-btn--float">works</button>
+      </section>
 
     </main>
   </body>

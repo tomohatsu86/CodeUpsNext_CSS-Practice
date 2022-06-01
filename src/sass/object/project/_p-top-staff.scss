@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-top-staff{
-  background-color: rgba(175, 158, 151, 0.6);
-  background: linear-gradient(180deg, rgba(175, 158, 151, 0.6) 0%, rgba(175, 158, 151, 0.6) 69.333%, $white 69.333%, $white 100%);
+  padding-bottom: rem(40);
+  background: linear-gradient(180deg, transparent 0%, transparent 3.5%, $bg-color02 3.5%, $bg-color02 100%);
 
+  @include mq("md"){
+    background: linear-gradient(180deg, $white 0%, $white 3.5%, $bg-color02 3.5%, $bg-color02 100%);
+  }
 }
 
 .p-top-staff__top{

@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-top-news{
+  padding-top: rem(14);
+  padding-bottom: rem(56);
+  background-color: $bg-color03;
+}
+
+.p-top-news__top{
+  margin-top: rem(30);
+}
+
+.p-top-news__items{
+  margin-top: rem(30);
+}
+
+.p-top-news__item{
+  margin: 0 auto;
+}
+
+.p-top-news__item + .p-top-news__item{
+  margin-top: rem(30);
+}
+
+.p-top-news__btn{
+  width: 100%;
+  margin-top: rem(30);
+  text-align: center;
+}
