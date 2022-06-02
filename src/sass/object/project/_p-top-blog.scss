@@ -6,6 +6,11 @@
   background: linear-gradient(90deg, $bg-color01 0%, $bg-color01 69.333%, $white 69.333%, $white 100%);
 }
 
+.p-top-blog__head{
+  width: rem(130);
+  margin: 0 auto;
+}
+
 .p-top-blog__top{
   margin-top: rem(20);
 }
