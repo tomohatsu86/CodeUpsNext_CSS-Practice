@@ -701,7 +701,7 @@ select::-ms-expand {
   top: 0;
   right: 0;
   content: "";
-  width: 84.375%;
+  width: 85%;
   height: 100%;
   border-bottom-right-radius: 10px;
   border-bottom-right-radius: 0.625rem;

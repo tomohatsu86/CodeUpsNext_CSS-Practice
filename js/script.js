@@ -1,7 +1,7 @@
+jQuery(function ($) {
+  // この中であればWordpressでも「$」が使用可能になる
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
-  var topBtn = $('.pagetop');
+  var topBtn = $(".pagetop");
   topBtn.hide();
 
   // ボタンの表示設定
@@ -17,9 +17,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      300,
+      "swing"
+    );
     return false;
   });
 
@@ -30,36 +34,35 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-drawer-open").toggleClass("open");
     $(".drawer-menu").toggleClass("open");
     $("html").toggleClass("is-fixed");
-
   });
-
-
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
-  $(document).on('click', 'a[href*="#"]', function () {
+  $(document).on("click", 'a[href*="#"]', function () {
     let time = 400;
-    let header = $('header').innerHeight();
+    let header = $("header").innerHeight();
     let target = $(this.hash);
     if (!target.length) return;
     let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+    $("html,body").animate({ scrollTop: targetY }, time, "swing");
     return false;
   });
 
   //swiper
-
+  $(function () {
     let mvSwipeOption = {
+      slidesPerView: 1.2, // コンテナ内に表示させるスライド数（CSSでサイズ指定する場合は 'auto'）
+      spaceBetween: 15, // スライド間の余白（px）
+      centeredSlides: true, // アクティブなスライドを中央に配置する
       loop: true,
-      effect: 'fade',
+      loopAdditionalSlides: 5,
+      effect: "slide",
       autoplay: {
-        delay: 4000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       speed: 2000,
-
-    }
-    new Swiper('.swiper', mvSwipeOption);
-
-
+    };
+    new Swiper(".swiper", mvSwipeOption);
+  });
 });
