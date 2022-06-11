@@ -22,6 +22,10 @@
   letter-spacing: 0;
   color: $black;
   text-transform: uppercase;
+  
+  @include mq("md"){
+    font-size: rem(48);
+  }
 
 }
 
@@ -33,6 +37,9 @@
   color: $black;
   border-bottom: rem(2) solid #005700;
 
+  @include mq("md"){
+    font-size: rem(24);
+  }
 }
 
 
