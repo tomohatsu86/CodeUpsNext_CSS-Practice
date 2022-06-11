@@ -62,7 +62,20 @@ jQuery(function ($) {
         disableOnInteraction: false,
       },
       speed: 2000,
+
+      breakpoints: {
+        // 768px以上の場合
+        768: {
+          slidesPerView: 4.2,
+          spaceBetween: 40,
+          centeredSlides: true,
+          loop: true,
+          loopAdditionalSlides: 5,
+        },
+      }
+      
     };
     new Swiper(".swiper", mvSwipeOption);
   });
 });
+

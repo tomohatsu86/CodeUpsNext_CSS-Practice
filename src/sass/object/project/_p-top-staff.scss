@@ -3,31 +3,41 @@
 .p-top-staff{
   padding-bottom: rem(40);
   background: linear-gradient(180deg, transparent 0%, transparent 3.5%, $bg-color02 3.5%, $bg-color02 100%);
-
+  
   @include mq("md"){
-    background: linear-gradient(180deg, $white 0%, $white 3.5%, $bg-color02 3.5%, $bg-color02 100%);
+    padding-bottom: rem(0);
+    background: linear-gradient(180deg, transparent 0%, transparent 36.36%, $bg-color02 36.36%, $bg-color02 80.95%, transparent 80.95%, transparent 100%, );
   }
 }
 
+.p-top-staff__inner{
+  padding: 0 rem(15);
+
+  @include mq(md) {
+    max-width: $l-inner;
+    margin: 0 auto;
+    }
+}
+
 .p-top-staff__head{
-  width: rem(190);
+  width: rem(500);
   margin: 0 auto;
 }
 
 .p-top-staff__top{
   margin-top: rem(40);
+
+  @include mq("md"){
+    margin-top: rem(32);
+  }
 }
 
 .p-top-staff__items{
   margin-top: rem(40);
-}
 
-.p-top-staff__item{
-  margin: 0 auto;
-}
-
-.p-top-staff__item + .p-top-staff__item{
-  margin-top: rem(40);
+  @include mq("md"){
+    margin-top: rem(32);
+  }
 }
 
 .p-top-staff__btn{

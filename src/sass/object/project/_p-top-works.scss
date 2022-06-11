@@ -4,6 +4,20 @@
   padding-top: rem(10);
   padding-bottom: rem(100);
   background: linear-gradient(90deg, transparent 0%, transparent 30.666%, $bg-color01 30.666%, $bg-color01 100%);
+  
+  @include mq("md"){
+    padding-top: rem(140);
+    padding-bottom: rem(140);
+  }
+}
+
+.p-top-works__inner{
+  padding: 0 rem(15);
+
+  @include mq(md) {
+	max-width: $l-inner;
+  margin: 0 auto;
+  }
 }
 
 .p-top-works__head{
@@ -17,6 +31,11 @@
 
 .p-top-works__items{
   margin-top: rem(20);
+  width: 100vw;
+
+  @include mq("md"){
+    margin-top: rem(80);
+  }
 }
 
 .p-top-works__item{
@@ -31,4 +50,8 @@
   width: 100%;
   margin-top: rem(60);
   text-align: center;
+
+  @include mq("md"){
+    margin-top: rem(85);
+  }
 }

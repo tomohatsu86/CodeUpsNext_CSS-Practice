@@ -2,4 +2,8 @@
 
 .l-top-staff{
   margin-top: rem(40);
+
+  @include mq("md"){
+    margin-top: rem(120);
+  }
 }

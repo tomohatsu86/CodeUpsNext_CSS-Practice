@@ -2,4 +2,8 @@
 
 .l-top-news{
   margin-top: rem(50);
+  
+  @include mq("md"){
+    margin-top: rem(80);
+  }
 }
